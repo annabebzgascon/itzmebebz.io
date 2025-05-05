@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @font-face {
+    font-family: 'MyCustomFont';
+    src: url('../font/merienda.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'MyCustomFont';
+    background: linear-gradient(135deg, #f8efc0, #5C4033);
+     color: rgba(0, 0, 0, 0);
+  }
+  
+
+  nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background: #5C4033;
+    height: 60px;
+    padding: 10px 40px;
+  }
+  
+  .logo-nav {
+    height: 50px;
+    width: auto;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  nav a {
+    color: white;
+    font-family: 'MyCustomFont';
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #9e2a30;
+  }
+  
+  .logout-btn {
+    background-color: #5C4033;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  .logout-btn:hover {
+    background-color: #000;
+  }
+
+  .groups-dropdown {
+    position: relative;
+    font-family: 'My Custom';
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-family: 'My Custom';
+    font-size: 20px;
+  }
+  
+  .dropbtn:hover {
+    color: #9e2a30;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+  }
+  
+  .dropdown-content a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .groups-dropdown:hover .dropdown-content {
+    display: block;
+  }
+ 
+  header { 
+    background: linear-gradient(135deg, #f8efc0, #5C4033); url('../css/bck.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 2rem;
+    color: white;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    flex-wrap: nowrap;
+  }
+  
+  .header-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    flex: 2;
+    max-width: 600px;
+  }
+  
+  .header-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .header-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+    max-width: 500px;
+  }
+  
+  .header-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .header-text p {
+    font-size: 1.2rem;
+  }
+  
+  .introduction {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #f8efc0, #5C4033); 
+  }
+  
+  .intro-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .intro-text {
+    flex: 1;
+  }
+  
+  .intro-text h2 {
+    font-size: 2rem;
+    color: #5C4033;
+    margin-bottom: 15px;
+  }
+  
+  .intro-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .intro-image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  
+  
+  .culture-treasure {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #f8efc0, #5C4033);  }
+  
+  .about-image {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .culture-treasure h2 {
+    font-size: 2.5rem;
+    color: #5C4033;
+    flex: 2;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .culture-treasure p {
+    font-size: 1.1rem;
+    color: #000000;
+    line-height: 1.6;
+    flex: 2;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    color: #000;
+    padding: 40px;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f8efc0, #5C4033);  }
+
+
+  .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 {
+    color: #5C4033;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    color: #000000;
+    font-size: 0.95rem;
+  }
+  
+  .card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #3e2a1d;
+    border: none;
+    font-family: 'MyCustomFont';
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card button:hover {
+    background: black;
+  }
+  
+  footer.footer {
+    background-color: #5C4033;
+    color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer {
+    background-color: #5C4033;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-left img {
+    height: 60px;
+  }
+  
+  .footer-center {
+    text-align: center;
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .footer .text {
+    font-size: 14px;
+    margin-bottom: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .footer .social-icons {
+    margin-top: 10px;
+  }
+  
+  .footer .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  .footer .social-icons img {
+    height: 30px;
+    width: 30px;
+    transition: transform 0.2s;
+  }
+  
+  .footer .social-icons img:hover {
+    transform: scale(1.2);
+  }
+  
+
+  @media (max-width: 768px) {
+    .cards {
+      padding: 20px;
+    }
+  
+    .card img {
+      height: 150px;
+    }
+  
+    header h1 {
+      font-size: 2.5rem;
+    }
+  
+    nav a {
+      font-size: 0.85rem;
+    }
+  }
+  

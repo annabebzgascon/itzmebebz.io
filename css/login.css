@@ -1,0 +1,96 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,  #A9746E, #5C4033);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .cancel-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;   }
+  
+  .cancel-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .auth-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    position: relative; 
+  }
+  
+  
+
+  .auth-container h2 {
+    margin-bottom: 20px;
+    color: #5C4033;
+  }
+  
+
+  .auth-container input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+
+  .auth-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5C4033;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+  }
+  
+  .auth-container button:hover {
+    background-color: #7B5E57;
+  }
+  
+
+  .auth-container p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .auth-container a {
+    color: #5C4033;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .auth-container a:hover {
+    text-decoration: underline;
+  }
+
+  

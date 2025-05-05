@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../font/merienda.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  body {
+    margin: 0;
+    font-family: 'MyCustomFont', sans-serif;
+    background: #9e2a30da;
+    padding-top: 80px;
+    padding: 0;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #5C4033;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .logo-nav {
+    height: 50px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #9e2a30;
+  }
+  
+  .groups-dropdown {
+    position: relative;
+    font-family: 'My Custom';
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-family: 'My Custom';
+    font-size: 20px;
+  }
+  
+  .dropbtn:hover {
+    color: #9e2a30;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+  }
+  
+  .dropdown-content a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .groups-dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+.about-section {
+  padding: 40px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: maroon;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+
+.footer {
+  background-color: #5C4033;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+}
+
+.footer-left img {
+  height: 60px;
+}
+
+.footer-center {
+  text-align: center;
+  flex: 1;
+  margin-left: 20px;
+}
+
+.footer .text {
+  font-size: 14px;
+  margin-bottom: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer .social-icons {
+  margin-top: 10px;
+}
+
+.footer .social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.footer .social-icons img {
+  height: 30px;
+  width: 30px;
+  transition: transform 0.2s;
+}
+
+.footer .social-icons img:hover {
+  transform: scale(1.2);
+}

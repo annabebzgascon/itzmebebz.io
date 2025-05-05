@@ -1,0 +1,100 @@
+/* Reset and basic settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right,  #A9746E, #5C4033);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+
+  .cancel-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+  }
+  
+  .cancel-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .cancel-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .auth-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .auth-container h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #5C4033;
+  }
+  
+  .auth-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .auth-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #5C4033;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .auth-container button:hover {
+    background-color: #40291b;
+  }
+  
+  .auth-container p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .auth-container p a {
+    color: #5C4033;
+    text-decoration: none;
+  }
+  
+  .auth-container p a:hover {
+    text-decoration: underline;
+  }
+  
+ 
+  @media (max-width: 600px) {
+    .auth-container {
+      margin: 20px;
+    }
+  }
+  

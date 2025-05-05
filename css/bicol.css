@@ -1,0 +1,97 @@
+.eata-header .header-img {
+    width: 100%;
+    height: auto;
+    background-size:  cover;
+    max-height: 400px;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .back-button a {
+    text-decoration: none;
+    color: #5C4033;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s;
+  }
+  
+  .back-button a:hover {
+    color: #9e2a30;
+  }
+  
+  .back-icon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .section {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f8efc0, #5C4033);
+   
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #5C4033;
+  }
+  
+  .history, .culture {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .text-content {
+    flex: 1 1 300px;
+    max-width: 600px;
+  }
+  
+  .image-content img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .video-wrapper {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links li {
+    margin-bottom: 10px;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #5C4033;
+    font-weight: bold;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+  
